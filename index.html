@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>krishi market</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/logo.jpg"
+    />
+    <link rel="stylesheet" href="center.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <script src="script.js" type="module"></script>
+    <link rel="stylesheet" href="index.css" />
+    <script src="sli.js" type="module"></script>
+    <script src="sli2.js" type="module"></script>
+    <link rel="stylesheet" href="sli.css" />
+    <link rel="stylesheet" href="silder1.css" />
+    <script src="slider1.js" type="module"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="loading.js"></script>
+    <script src="addtocart.js"></script>
+    <script>
+       AOS.init();
+       function al()
+       {
+        alert("We Notify Soon Thank you");
+       }
+    </script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+    
+</head>
+<body>
+  <div class="loader_bg">
+    <div class="loader"><img src="main page.grocery\loader.gif" alt="#"/></div>
+ </div>
+    <header>
+        <a href="login page/loginpage.html" class="logo">
+            <img src="images/logo.jpg" alt="Logo" class="logo">
+        </a>
+        <div class="search" onclick="togglesearch();">
+          <ion-icon name="search-outline"></ion-icon>
+          <input type="text" placeholder="Search">
+      </div>
+        
+        <div class="bar">
+            <ul class="nav">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./aboutus.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="dairyproduct.html">Dairy Product</a>
+                        <a href="wholesome_harvest.html">Fresh Atta</a>
+                        <a href="green_veges.html">Vegetables</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">My Location</a>
+                    <div class="dropdown-content">
+                        <a href="#">Bhilwara</a>
+                        <a href="#">Jaipur</a>
+                        <a href="#">Udaipur</a>
+                    </div>
+                </li>
+                
+            </ul>
+            <div class="mycart">
+              <a href="cart1.html">
+                <ion-icon name="cart-outline"></ion-icon></a>
+            </div>
+            <div class="menu">
+                <ion-icon name="ellipsis-vertical"></ion-icon>
+            </div>
+        </div>
+      
+    </header>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+
+    <div id="NAVBAR"></div>
+
+    <!--krishiMarket big logo-->
+    <div id="container_byOm">
+      <div id="Anpaan">
+        <img
+          src="images/LTC_Logo.png"
+          alt=""
+          height="100%"
+          width="100%" style="box-sizing: 50%;margin-top: 100px;" />
+          
+
+      </div>
+      <!-- carousel -item -->
+      <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <div>
+                  <img src="images/Ghee carasoual.webp" width="1550px" height="400px">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div>
+                  <img src="images/panner crousal.webp" width="1550px" height="400px">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div>
+                  <img src="images/Shrikhand.webp" width="1550px" height="400px">
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control prev">❮</button>
+        <button class="carousel-control next">❯</button>
+    </div>
+    <!-- product grid -->
+    <div class="products-grid">
+      <div class="product-card" data-product="vegetables">
+          <div class="product-image" style="background: whitesmoke;">
+            <img src="images/gondh_ladoo_01-removebg-preview.png">
+            <svg class="product-icon" width="100" height="100" viewBox="0 0 24 24">
+                  <!-- <path fill="white" d="M7,10H12V15H7M19,19H5V8H19M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z"></path> -->
+                  
+                
+              </svg> 
+          </div>
+          <h3>Winter special</h3>
+          <p>Ladoo</p>
+          <p style="margin-top: 10px;color: green; border-radius: 10px;">Coming Soon</p>
+          
+        </div>
+    
+         
+
+      <div class="product-card" data-product="fruits">
+          <div class="product-image" style="background: whitesmoke;">
+            <img src="images/sweetcorn-removebg-preview.png">
+              <svg class="product-icon" width="100" height="100" viewBox="0 0 24 24"> 
+                   <!-- <path fill="white" d="M20,10C22,13 17,22 15,22C13,22 13,21 12,21C11,21 11,22 9,22C7,22 2,13 4,10C6,7 9,7 11,8V5C5.38,8.07 4.11,3.78 4.11,3.78C4.11,3.78 6.77,0.19 11,5V3H13V8C15,7 18,7 20,10Z"/>  -->
+              </svg>
+  
+          </div>
+          <h3>Bumper bouty</h3>
+          <p>Sweet corn </p>
+          <p style="margin-top: 10px;color: green; border-radius: 10px;">Coming Soon</p>  
+
+        </div>
+
+      <div class="product-card" data-product="grains">
+          <div class="product-image" style="background:whitesmoke">
+             <img src="images/black_rasin-removebg-preview.png" style="margin-left:50px;"> 
+            <svg class="product-icon" width="100" height="100" viewBox="0 0 24 24"> 
+               <path fill="white"/>  
+              </svg> 
+          </div>
+          <h3>Dry Fruits</h3>
+          <p>black Raisins</p>
+          <p style="margin-top: 10px;color: green; border-radius: 10px;">Coming Soon</p>  
+
+      </div>
+  </div>
+<!-- product grid -->
+<div class="products-grid">
+  <div class="product-card" data-product="vegetables">
+    <div class="product-image" style="background: whitesmoke;">
+       <img src="images/chach-removebg-preview.png"style="margin-left:20px;">
+          <svg class="product-icon" width="100" height="100" viewBox="0px 24 24">
+            <!-- <path fill="white" d="M7,10H12V15H7M19,19H5V8H19M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z"/> -->
+          </svg> 
+      </div>
+      <h3>Kisan fresh</h3>
+      <p>Plain chaas</p>
+      <p style="margin-top: 10px;color: green; border-radius: 10px;">Coming Soon</p>  
+
+  </div>
+  <div class="product-card" data-product="fruits">
+    <div class="product-image" style="background: whitesmoke;">
+      <img src="images/Avocado-removebg-preview.png">
+        <svg class="product-icon" width="100" height="100" viewBox="0 0 24 24"> 
+             <!-- <path fill="white" d="M20,10C22,13 17,22 15,22C13,22 13,21 12,21C11,21 11,22 9,22C7,22 2,13 4,10C6,7 9,7 11,8V5C5.38,8.07 4.11,3.78 4.11,3.78C4.11,3.78 6.77,0.19 11,5V3H13V8C15,7 18,7 20,10Z"/>  -->
+        </svg>
+
+    </div>
+    <h3>Bumper bouty</h3>
+    <p>Avocado </p>
+    <p style="margin-top: 10px;color: green; border-radius: 10px;">Coming Soon</p>  
+
+  </div>
+  
+  <div class="product-card" data-product="grains">
+    <div class="product-image" style="background: whitesmoke;">
+       <img src="images/milk-removebg-preview.png"> 
+      <svg class="product-icon" width="100" height="100" viewBox="0 0 24 24"> 
+         <path fill="white"/>  
+        </svg> 
+    </div>
+    <h3>Kisan fresh</h3>
+    <p>Cow milk</p>
+    <p style="margin-top: 10px;color: green; border-radius: 10px;">Coming Soon</p>  
+
+</div>
+</div>
+  
+
+         <div id="Andownload">
+        <img
+          src="images/super saving.jpg"
+          height="100%"
+          width="100%" style="box-sizing: 50%;margin: top 50px;"
+          alt=""/>
+          </div>
+
+
+    
+
+      <div id="bankgrid">
+        <div id="bankcard">
+          <a href="./dairyproduct.html">
+            <img
+              src="images/dairyproduct_1-removebg-preview.png " style="margin-left:20px;"
+              alt=""
+                 src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=200,h=256/layout-engine/2021-12/category-1.png?61ea837b72faf"
+                  alt=""
+            />
+          </a>
+          <div><p style="margin-left: 80px; font-size: x-large; font-family:sans-serif;">Dairy</p></div>
+        </div>
+        <div id="bankcard">
+          <a href="./ghee.html">
+            <img src="images/oil-removebg-preview.png"  style="margin-left:20px;" alt="grocery img.." />
+          </a>
+          <div><p style="margin-left: 80px; font-size: x-large; font-family:sans-serif;">Ghee</p></div>
+        </div>
+        <div id="bankcard">
+          <a href="./fruits.html">
+            <img
+              src="images/fruits-removebg-preview.png" style="margin-left:20px;"
+              alt=""
+            />
+          </a>
+          <div><p style="margin-left: 80px; font-size: x-large; font-family:sans-serif;">Fruits</p></div>
+        </div>
+        <div id="bankcard">
+          <a href="./spices.html">
+            <img
+              src="images/spices_3-removebg-preview.png" style="margin-left:20px;"
+              alt=""
+            />
+          </a>
+          <div><p style="margin-left: 80px; font-size: x-large; font-family:sans-serif;">Spices</p></div>
+        </div>
+        <div id="bankcard">
+          <a href="./green_veges.html">
+            <img
+              src=" images/veges-removebg-preview.png" style="margin-left:15px;"
+              alt=""
+            />
+          </a>
+          <div><p style="margin-left: 80px; font-size: x-large; font-family:sans-serif;">Veges</p></div>
+        </div>
+        <div id="bankcard">
+          <a href="./staples.html">
+            <img
+              src="images/staples-removebg-preview.png" style="margin-left:20px;"
+              alt=""
+            />
+          </a>
+          <div><p style="margin-left: 80px; font-size: x-large; font-family:sans-serif;">Staples</p></div>
+        </div>
+        <div id="bankcard">
+          <a href="./dry_fruits.html">
+            <img
+              src="images/dry_fruits-removebg-preview.png" style="margin-left:20px;"
+              alt=""
+            />
+          </a>
+          <div><p style="margin-left: 80px; font-size: x-large; font-family:sans-serif;">Dry Fruits</p></div>
+        </div>
+        <div id="bankcard">
+          <a href="./cold_pressed_oil.html">
+            <img
+              src="images/cold_pressed_oil-removebg-preview.png" style="margin-left:20px;"
+              alt=""
+            />
+          </a>
+          <div><p style="margin-left: 80px; font-size: x-large; font-family:sans-serif;">Cold Pressed Oil</p></div>
+        </div>
+        <div id="bankcard">
+          <a href="./wholesome_harvest.html">
+            <img
+              src="images/atta-removebg-preview.png" style="margin-left:20px;"
+              alt=""
+            />
+          </a>
+          <div><p style="margin-left: 80px; font-size: x-large; font-family:sans-serif;">Atta</p></div>
+        </div>
+        <div id="bankcard">
+          <a href="./exotic_vegetales.html">
+            <img
+              src="images/exotic_vegetables-removebg-preview.png" style="margin-left:20px;"
+              alt=""
+            />
+          </a>
+          <div><p style="margin-left: 80px; font-size: x-large; font-family:sans-serif;">Exotic Vegetables</p></div>
+        </div>
+        <div id="bankcard">
+          <a href="./fresh_bakery.html">
+            <img
+              src=" images/fresh_bakery-removebg-preview.png" style="margin-left:20px;"
+              alt=""
+            />
+          </a>
+          <div><p style="margin-left: 80px; font-size: x-large; font-family:sans-serif;">Fresh Bakery</p></div>
+        </div>
+        <div id="bankcard">
+          <a href="./saladmix_panready.html">
+            <img
+              src="images/salad_mix_and_pan_ready_mix-removebg-preview.png" style="margin-left:20px;"
+              alt=""
+            />
+          </a>
+          <div><p style="margin-left: 80px; font-size: x-large; font-family:sans-serif;">Salad Mix and Pan Ready</p></div>
+        </div>
+        <div id="bankcard">
+          <a href="./juices.html">
+            <img
+              src="images/fresh_juice-removebg-preview.png" style="margin-left:20px;"
+              alt=""
+            />
+          </a>
+          <div><p style="margin-left: 80px; font-size: x-large; font-family:sans-serif;">Fresh juice</p></div>
+        </div>
+        <div id="bankcard">
+          <a href="./pooja_and_flower.html">
+            <img
+              src="images/pooja_and_flower_essential-removebg-preview.png" 
+              alt=""
+            />
+          </a>
+          <div><p style="margin-left: 80px; font-size: x-large; font-family:sans-serif;">Pooja and Flower Essential</p></div>
+        </div>
+        <div id="bankcard">
+          <a href="./winter special.html">
+            <img
+              src="images/winter-removebg-preview.png" style="margin-left:25px;"
+              alt=""
+            />
+          </a>
+          <div><p style="margin-left: 80px; font-size: x-large; font-family:sans-serif;">Winter special</p></div>
+        </div>
+        <div id="bankcard">
+          <a href="./chocolates.html">
+            <img
+              src="images/fresh_chocolate-removebg-preview.png" style="margin-left:20px;"
+              alt=""
+            />
+          </a>
+          
+         
+  
+        
+          <div><p style="margin-left: 80px; font-size: x-large; font-family:sans-serif;">Fresh Chocolate</p></div>
+        </div>
+      </div>
+      <div id="Andownload">
+        <img
+          src="IMAGES/banner_1.webp"
+          height="100%"
+          width="100%" style="box-sizing: 50%;margin: top 50px;"
+          alt=""/>
+          </div>
+      <div class="product-container1">
+        <div class="product-card1">
+          <div class="product-image1">
+            <img src="images/mango_panna_cotta-removebg-preview (1).png" style="margin-left: 10px; margin-top:20px;">
+              <!-- <svg class="product-svg1" viewBox="0 0 300 240" xmlns="http://www.w3.org/2000/svg"> -->
+              <!-- <rect width="100%" height="100%" fill="#f8f9fa"/> -->
+              <!-- <circle cx="150" cy="120" r="80" fill="#2ecc71"> -->
+                <path d="M70 120 L150 60 L230 120 L150 180 Z" fill="#e74c3c"></path>
+                <animate attributeName="r" values="80;85;80" dur="2s" repeatCount="indefinite"/>
+              <!--</circle>-->
+              <path d="M110 120 L150 80 L190 120 L150 160 Z" fill="#27ae60">
+                <animate attributeName="d" values="M110 120 L150 80 L190 120 L150 160 Z;M100 120 L150 70 L200 120 L150 170 Z;M110 120 L150 80 L190 120 L150 160 Z" dur="2s" repeatCount="indefinite"/>
+              </path>
+             <!---- <circle cx="130" cy="100" r="10" fill="white"/>-->
+            </svg>
+          </div>
+          <div class="product-info1">
+            <h2 class="product-title1">MANGO PANNA</h2>
+            <p class="product-description1">This Mango Coconut Panna Cotta is a delightful desert.</p>
+            <div class="product-price1">29 NOVEMBER</div>
+            <a href="https://example.com/buy" class="buy-button">Read more</a>
+          </div>
+        </div>
+    
+        <div class="product-card1">
+          <div class="product-image1">
+            <img src="images/palak_panner_paratha_11zon-removebg-preview.png" style="margin-left: 10px; margin-top: 20px;">
+            <!-- <svg class="product-svg1" viewBox="0 0 300 240" xmlns="http://www.w3.org/2000/svg"> -->
+              <!-- <rect width="100%" height="100%" fill="#f8f9fa"/> -->
+              <!-- <rect x="70" y="60" width="160" height="120" fill="#3498db"> -->
+                <path d="M70 120 L150 60 L230 120 L150 180 Z" fill="#e74c3c"></path>
+                <animate attributeName="width" values="160;170;160" dur="2s" repeatCount="indefinite"/>
+              <!-- </rect> -->
+              <!-- <circle cx="150" cy="120" r="40" fill="#2980b9"> -->
+                <animate attributeName="r" values="40;45;40" dur="2s" repeatCount="indefinite"/>
+              <!-- </circle> -->
+              <!-- <rect x="130" y="90" width="40" height="60" fill="#fff"/> -->
+            <!-- </svg> -->
+          </div>
+          <div class="product-info1">
+            <h2 class="product-title1">PALAK PARATHA</h2>
+            <p class="product-description1">Indulge in the goodness of spinach and panner.</p>
+            <div class="product-price1">4 December</div>
+            <a href="https://example.com/buy-speaker" class="buy-button">Read more</a>
+          </div>
+        </div>
+    
+        <div class="product-card1">
+          <div class="product-image1">
+            <img src="images/august_abundance_enhanced_11zon-removebg-preview.png"  style="margin-left: 80px; margin-top: 20px;">
+            <!-- <svg class="product-svg1" viewBox="0 0 300 240" xmlns="http://www.w3.org/2000/svg"> -->
+              <!-- <rect width="100%" height="100%" fill="#f8f9fa"/> -->
+              <path d="M70 120 L150 60 L230 120 L150 180 Z" fill="#e74c3c">
+                <animate attributeName="d" values="M70 120 L150 60 L230 120 L150 180 Z;M60 120 L150 50 L240 120 L150 190 Z;M70 120 L150 60 L230 120 L150 180 Z" dur="2s" repeatCount="indefinite"/>
+              </path>
+              <!-- <circle cx="150" cy="120" r="30" fill="#c0392b"> -->
+                <animate attributeName="r" values="30;35;30" dur="2s" repeatCount="indefinite"/>
+              <!-- </circle> -->
+              <!-- <rect x="140" y="100" width="20" height="40" fill="#fff"/> -->
+            <!-- </svg> -->
+          </div>
+          <div class="product-info1">
+            <h2 class="product-title1">WINTER ABUNDANCE</h2>
+            <p class="product-description1">Discover Fruits and Vegetables in december.</p>
+            <div class="product-price1">17 December</div>
+            <a href="https://example.com/buy-earbuds" class="buy-button">Read more</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="navigation-buttons">
+        <button class="nav-button" id="prevBtn">Previous</button>
+        <button class="nav-button" id="nextBtn">Next</button>
+      </div>
+      <!-- <div class="media-coverage">
+        <div class="slideshow-container">
+    
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/news_1.jpg" style="width: 100%;">
+            <div class="text">Caption Text</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/news_2.jpg" style="width: 100%;">
+            <div class="text">Caption Two</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/news_3.jpg" style="width: 100%;">
+            <div class="text">Caption Three</div>
+          </div>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div> -->
+          <div class="center" >
+          <div class="carousel-wrapper">
+            <!-- abstract radio buttons for slides -->
+            <input id="slide1" type="radio" name="controls" checked="checked" />
+            <input id="slide2" type="radio" name="controls" />
+            <input id="slide3" type="radio" name="controls" />
+            <input id="slide4" type="radio" name="controls" />
+            <input id="slide5" type="radio" name="controls" />
+        
+            <!-- navigation dots -->
+            <label for="slide1" class="nav-dot"></label>
+            <label for="slide2" class="nav-dot"></label>
+            <label for="slide3" class="nav-dot"></label>
+            <label for="slide4" class="nav-dot"></label>
+            <label for="slide5" class="nav-dot"></label>
+        
+            <!-- arrows -->
+            <label for="slide1" class="left-arrow"> < </label>
+            <label for="slide2" class="left-arrow"> < </label>
+            <label for="slide3" class="left-arrow"> < </label>
+            <label for="slide4" class="left-arrow"> < </label>
+            <label for="slide5" class="left-arrow"> < </label>
+        
+            <label for="slide1" class="right-arrow"> > </label>
+            <label for="slide2" class="right-arrow"> > </label>
+            <label for="slide3" class="right-arrow"> > </label>
+            <label for="slide4" class="right-arrow"> > </label>
+            <label for="slide5" class="right-arrow"> > </label>
+        
+            <div class="carousel">
+              <ul >
+                <li>
+                  <img src="images/news_1.jpg" height="400"/>
+                </li>
+                <li>
+                  <img src="images/news_2.jpg" alt="" height="400">
+                </li>
+                <li>
+                  <img src="images/news_3.jpg" height="400" />
+                </li>
+                <li>
+                  <img src="images/news_4.jpg" height="400">
+                </li>
+                <li>
+                  <img src="images/news_2.jpg" alt="" height="400">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  <script src="script.js"></script>
+  
+  
+   <!-- footer div -->
+  <!-- <div id="footer_display"></div> -->
+  
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-image">
+            <img src="images/footer_image.png" height="50%" width="1800">
+        </div>
+        <div class="footer-content">
+            <div class="menu">
+                <h3>MENU</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Why KisanMarket?</a></li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <h3>CONTACTS</h3>
+                <p><strong>Krishi Market Corporate Office</strong></p>
+                <p>Plot no. C-10, TTC Industrial Estate,<br>
+                   MIDC, Pawne, Koparkhairne, Navi Mumbai,<br>
+                   Maharashtra - 400705</p>
+                <p><strong>Phone:</strong> 1800 267 2222</p>
+                <p><strong>Email:</strong> <a href="mailto:customercare@krishiMarket.in">customercare@KrishiMarket.in</a></p>
+            </div>
+            <div class="download">
+                <h3>DOWNLOAD THE APP </h3>
+                <div class="app-links">
+                    <a href="#"><img src="images/App-store.png" alt="App Store" style="margin-right: 50px;"></a>
+                    <a href="#"><img src="images/Google-play.png" alt="Google Play"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024, KrishiMarket | <a href="#">Privacy Policy</a> | <a href="#">Sitemap</a> | <a href="#">Terms & Conditions</a></p>
+    </div>
+</footer>
+
+</body>
+</html>

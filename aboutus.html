@@ -1,0 +1,403 @@
+<html><head><base href="." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Krishimarket - Agriculture Redefined</title>
+    <style>
+      .loader_bg {
+  position: fixed;
+  z-index: 9999999;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader img {
+  width: 280px;
+}
+    :root {
+      /* --primary: #2E7D32; */
+      --secondary: #558B2F;
+      --dark: #1B5E20;
+      --light: #F1F8E9;
+      --accent: #FBC02D;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      overflow-x: hidden;
+    }
+    
+    .header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      /* padding: 3rem; */
+      text-align: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .header h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      opacity: 0;
+      animation: slideIn 1s ease forwards;
+    }
+    
+    .header p {
+      font-size: 1.2rem;
+      opacity: 0;
+      animation: slideIn 1s ease forwards 0.3s;
+    }
+    
+    .farming-animation {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 100px;
+      height: 100px;
+      animation: float 3s ease-in-out infinite;
+    }
+    
+    .content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    
+    .mission-card {
+      background: white;
+      border-radius: 15px;
+      padding: 2rem;
+      margin: 2rem 0;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 0.8s ease forwards;
+      border-left: 5px solid var(--accent);
+    }
+    
+    .stats-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .stat-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+      opacity: 0;
+      animation: scaleIn 0.6s ease forwards;
+      animation-delay: calc(var(--delay) * 0.2s);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .stat-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, transparent 50%);
+      animation: rotate 4s linear infinite;
+    }
+    
+    .stat-number {
+      font-size: 2.5rem;
+      color: var(--primary);
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      position: relative;
+    }
+    
+    .team-section {
+      margin: 4rem 0;
+    }
+    
+    .team-member {
+      display: flex;
+      align-items: center;
+      margin: 2rem 0;
+      opacity: 0;
+      animation: slideInRight 0.8s ease forwards;
+      animation-delay: calc(var(--delay) * 0.3s);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: var(--secondary);
+      margin-right: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    @keyframes slideIn {
+      from { 
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(5deg); }
+    }
+    
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8) rotate(-10deg);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+      }
+    }
+    
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(-50px) scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+      }
+    }
+    
+    .leaf {
+      position: absolute;
+      animation: falling 10s linear infinite;
+      opacity: 0.6;
+      pointer-events: none;
+    }
+    
+    @keyframes falling {
+      0% {
+        transform: translateY(-100%) rotate(0deg) translateX(0);
+        opacity: 0.6;
+      }
+      50% {
+        transform: translateY(50vh) rotate(180deg) translateX(100px);
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg) translateX(0);
+        opacity: 0;
+      }
+    }
+    
+    .growth-icon {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      animation: grow 2s ease-in-out infinite;
+    }
+    
+    @keyframes grow {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="loading.js"></script>
+    <script>
+       AOS.init();
+    </script>
+    </head>
+    <body>
+      <div class="loader_bg">
+        <div class="loader"><img src="main page.grocery\loader.gif" alt="#"/></div>
+     </div>
+    <div class="header">
+        <img src="images/aboutus_banner_image.png" width="1500px">
+      <!-- <h1>KrishiMarket</h1>
+      <p>Connecting Farmers to Future</p>
+       -->
+      <svg class="farming-animation" viewBox="0 0 100 100">
+        <path d="M20,80 Q50,20 80,80" stroke="white" fill="none" stroke-width="3">
+          <animate attributeName="d" 
+                   dur="3s"
+                   repeatCount="indefinite"
+                   values="M20,80 Q50,20 80,80;
+                           M20,80 Q50,30 80,80;
+                           M20,80 Q50,20 80,80"/>
+        </path>
+        <circle cx="50" cy="50" r="3" fill="white">
+          <animate attributeName="cy"
+                   dur="3s"
+                   repeatCount="indefinite"
+                   values="50;40;50"/>
+        </circle>
+      </svg>
+    </div>
+    
+    <div class="content">
+      <div class="mission-card">
+        <h2><i class="fas fa-seedling"></i> Our Mission</h2>
+        <p>KrishiMarket is revolutionizing agricultural commerce by creating a direct bridge between farmers and consumers. We envision a future where technology empowers farming communities and ensures fair trade practices.</p>
+        <i class="fas fa-leaf growth-icon"></i>
+      </div>
+    
+      <div class="stats-container">
+        <div class="stat-card" style="--delay: 1">
+          <div class="stat-number">10K+</div>
+          <div>Farmer Partners</div>
+        </div>
+        <div class="stat-card" style="--delay: 2">
+          <div class="stat-number">50+</div>
+          <div>Districts Covered</div>
+        </div>
+        <div class="stat-card" style="--delay: 3">
+          <div class="stat-number">100K+</div>
+          <div>Happy Customers</div>
+        </div>
+      </div>
+    
+      <div class="team-section">
+        <h2>Founded By </h2>
+        <div class="team-member" style="--delay: 1">
+          <div class="avatar">SM</div>
+          <div>
+            <h3>Shweta Mishra</h3>
+           
+          </div>
+        </div>
+        <div class="team-member" style="--delay: 2">
+          <div class="avatar">KS</div>
+          <div>
+            <h3>Khushi Soni</h3>
+           
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6" style="margin-left: 50px;">
+      <div class="map_main" >
+         <div class="map-responsive" >
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57694.26724740403!2d74.5905363986169!3d25.341414820028948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c2368c070a55%3A0xc92f70a42dcb5294!2sBhilwara%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1738907340875!5m2!1sen!2sin" width="1400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+      </div>
+   </div>
+    
+    <script>
+    function createLeaf() {
+      const leaf = document.createElement('div');
+      leaf.classList.add('leaf');
+      leaf.innerHTML = Math.random() > 0.5 ? '🌿' : '🍃';
+      leaf.style.left = Math.random() * 100 + 'vw';
+      leaf.style.animationDuration = Math.random() * 5 + 5 + 's';
+      leaf.style.fontSize = Math.random() * 20 + 10 + 'px';
+      document.body.appendChild(leaf);
+    
+      leaf.addEventListener('animationend', () => {
+        leaf.remove();
+      });
+    }
+    
+    setInterval(createLeaf, 2000);
+    
+    const teamMembers = document.querySelectorAll('.team-member');
+    teamMembers.forEach(member => {
+      member.addEventListener('mouseenter', () => {
+        member.style.transform = 'scale(1.05) translateX(10px)';
+        member.style.transition = 'all 0.3s ease';
+        member.style.background = 'rgba(255,255,255,0.1)';
+        member.style.borderRadius = '10px';
+        member.style.padding = '10px';
+      });
+      
+      member.addEventListener('mouseleave', () => {
+        member.style.transform = 'scale(1) translateX(0)';
+        member.style.background = 'transparent';
+        member.style.padding = '0';
+      });
+    });
+    
+    const stats = document.querySelectorAll('.stat-card');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'scale(1) rotate(0deg)';
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+    
+    stats.forEach(stat => {
+      observer.observe(stat);
+    });
+    
+    // Add number counter animation
+    const statNumbers = document.querySelectorAll('.stat-number');
+    statNumbers.forEach(number => {
+      const finalValue = parseInt(number.innerText);
+      let currentValue = 0;
+      const increment = finalValue / 50;
+      
+      function updateNumber() {
+        if (currentValue < finalValue) {
+          currentValue += increment;
+          number.innerText = Math.round(currentValue) + '+';
+          requestAnimationFrame(updateNumber);
+        } else {
+          number.innerText = finalValue + '+';
+        }
+      }
+      
+      observer.observe(number.parentElement);
+      number.parentElement.addEventListener('intersectionObserve', updateNumber);
+    });
+    </script>
+    
+    </body></html>

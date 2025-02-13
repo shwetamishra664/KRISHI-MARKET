@@ -1,0 +1,56 @@
+/* Container for the slider */
+.slider-container {
+  width: 100%;
+  max-width: 600px; /* Set the max width of the slider */
+  overflow: hidden; /* Hide overflow */
+  margin: auto;
+}
+
+/* The slider holds the individual slides */
+.slider {
+  display: flex; /* Arrange slides horizontally */
+  transition: transform 0.5s ease-in-out; /* Smooth sliding transition */
+}
+.slider1 {
+  display: flex; /* Arrange slides horizontally */
+  transition: transform 0.5s ease-in-out; /* Smooth sliding transition */
+}
+/* Each slide will be a block with some basic styling */
+.card {
+  min-width: 49%; /* Make each slide take up the full width of the container */
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-right: 10px; /* Space between slides */
+  border: 1px solid #ccc;
+}
+
+/* Navigation buttons styling */
+.slider-navigation {
+  text-align: center;
+  margin-top: 10px;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.card1 {
+  min-width: 49%; /* Make each slide take up the full width of the container */
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-right: 10px; /* Space between slides */
+  border: 1px solid #ccc;
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="icon"
+    type="image/x-icon"
+    href="images/logo.jpg"
+  />
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <script src="script.js" type="module"></script>
+    <link rel="stylesheet" href="index.css" />
+    <script src="sli.js" type="module"></script>
+    <script src="sli2.js" type="module"></script>
+    <link rel="stylesheet" href="sli.css" />
+    <link rel="stylesheet" href="silder1.css" />
+    <script src="slider1.js" type="module"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="loading.js"></script>
+    <script src="addtocart.js"></script>
+    <script src="search.js"></script>
+    <script>
+       AOS.init();
+    </script>
+</head>
+<body>
+  <div class="loader_bg">
+    <div class="loader"><img src="main page.grocery\loader.gif" alt="#"/></div>
+ </div>
+ <header>
+  <a href="login page/loginpage.html" class="logo">
+      <img src="images/logo.jpg" alt="Logo" class="logo">
+  </a>
+  <div class="search" onclick="togglesearch();">
+    <ion-icon name="search-outline"></ion-icon>
+    <input type="text" placeholder="Search">
+</div>
+  
+  <div class="bar">
+      <ul class="nav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./aboutus.html">About Us</a></li>
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Categories</a>
+              <div class="dropdown-content">
+                  <a href="dairyproduct.html">Dairy Product</a>
+                  <a href="wholesome_harvest.html">Fresh Atta</a>
+                  <a href="green_veges.html">Vegetables</a>
+              </div>
+          </li>
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">My Location</a>
+              <div class="dropdown-content">
+                  <a href="#">Bhilwara</a>
+                  <a href="#">Jaipur</a>
+                  <a href="#">Udaipur</a>
+              </div>
+          </li>
+          
+      </ul>
+      <div class="mycart">
+        <a href="cart1.html">
+          <ion-icon name="cart-outline"></ion-icon></a>
+      </div>
+      <div class="menu">
+          <ion-icon name="ellipsis-vertical"></ion-icon>
+      </div>
+  </div>
+  <ul class="nav-mobile">
+   
+      <li><a href="#">Categories</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">My Location</a></li>
+      
+  </ul>
+</header>
+  <img src="images/fruit-juice_banner_enhanced.jpeg" width="1800px" height="500px" style="box-sizing: right;margin-top: 100px;">
+   
+  <div id="bankgrid">
+     
+      <div id="bankcard">
+        <a href="./grocery.html">
+          <img src="images/pinkguavachilli_j08.png"  alt="guavachilli_img.." style="box-sizing: 50%;margin-top:50px; margin-left:20%;margin-right:20%;" />
+        </a>
+        <div><p style="margin-left:80px;"></pSTYLE><b>Guavachilli</b></div>
+          <div class="product">
+            <p class="discount">28% Off</p>
+            <p class="price">
+              <span class="original-price">₹45</span> <span class="discounted-price">₹38</span>
+            </p>
+            <!-- <p class="quantity">500 g</p> -->
+            <button class="add-to-cart" data-id="87" data-name="Guava Chilli" data-price="38">Add</button>
+          </div>
+      </div>
+        
+        <div id="bankcard1">
+          <a href="./grocery.html">
+            <img src="images/aampanna_j01.png"  alt="aampanna_img.." style="box-sizing: 50%;margin-top:50px; margin-left:20%;margin-right:20%;" />
+          </a>
+          <div><p style="margin-left:80px;"></pSTYLE><b>Aampanna</b></div>
+          <div class="product">
+            <p class="discount">28% Off</p>
+            <p class="price">
+              <span class="original-price">₹45</span> <span class="discounted-price">₹38</span>
+            </p>
+            <!-- <p class="quantity">500 g</p> -->
+            <button class="add-to-cart" data-id="88" data-name="Aampanna" data-price="38">Add</button>
+          </div>
+          
+        </div>
+        <div id="bankcard1">
+          <a href="./grocery.html">
+            <img src="images/coconutwater_j02.png"  alt="coconutwater_img.." style="box-sizing: 50%;margin-top:50px; margin-left:20%;margin-right:20%;" />
+          </a>
+          <div><p style="margin-left:80px;"></pstyle><b>Coconutwater</b></div>
+          <div class="product">
+            <p class="discount">28% Off</p>
+            <p class="price">
+              <span class="original-price">₹45</span> <span class="discounted-price">₹38</span>
+            </p>
+            <!-- <p class="quantity">500 g</p> -->
+            <button class="add-to-cart" data-id="89" data-name="Coconut Water" data-price="38">Add</button>
+          </div>
+        </div>
+        <div id="bankcard1">
+          <a href="./grocery.html">
+            <img src="images/grapefruit_j03.png"  alt="grapefruit_img.." style="box-sizing: 50%;margin-top:50px; margin-left:20%;margin-right:20%;" />
+          </a>
+          <div><p style="margin-left:80px;"></pSTYLE><b>Grapefruit</b></div>
+          <div class="product">
+            <p class="discount">28% Off</p>
+            <p class="price">
+              <span class="original-price">₹45</span> <span class="discounted-price">₹38</span>
+            </p>
+            <!-- <p class="quantity">500 g</p> -->
+            <button class="add-to-cart" data-id="90" data-name="Grape Fruit" data-price="38">Add</button>
+          </div>
+          
+        </div>
+        <div id="bankcard1">
+          <a href="./grocery.html">
+            <img src="images/hydration_j04.png"  alt="hydration_img.." style="box-sizing: 50%;margin-top:50px; margin-left:20%;margin-right:20%;" />
+          </a>
+          <div><p style="margin-left:80px;"></pSTYLE><b>Hydration</b></div>
+          <div class="product">
+            <p class="discount">28% Off</p>
+            <p class="price">
+              <span class="original-price">₹45</span> <span class="discounted-price">₹38</span>
+            </p>
+            <!-- <p class="quantity">500 g</p> -->
+            <button class="add-to-cart" data-id="91" data-name="Hydration" data-price="38">Add</button>
+          </div>
+        </div>
+        <div id="bankcard1">
+          <a href="./grocery.html">
+            <img src="images/mango_j05.png"  alt="mango_img.." style="box-sizing: 50%;margin-top:50px; margin-left:20%;margin-right:20%;" />
+          </a>
+          <div><p style="margin-left:80px;"></pSTYLE><b>Mango-Juice</b></div>
+          <div class="product">
+            <p class="discount">28% Off</p>
+            <p class="price">
+              <span class="original-price">₹45</span> <span class="discounted-price">₹38</span>
+            </p>
+            <!-- <p class="quantity">500 g</p> -->
+            <button class="add-to-cart" data-id="92" data-name="Mango Juice" data-price="38">Add</button>
+          </div>
+        </div>
+        <div id="bankcard1">
+          <a href="./grocery.html">
+            <img src="images/masalalemon_j06.png"  alt="masalalemon_img.." style="box-sizing: 50%;margin-top:50px; margin-left:20%;margin-right:20%;" />
+          </a>
+          <div><p style="margin-left:80px;"></pSTYLE><b>Masalalemon</b></div>
+          <div class="product">
+            <p class="discount">28% Off</p>
+            <p class="price">
+              <span class="original-price">₹45</span> <span class="discounted-price">₹38</span>
+            </p>
+            <!-- <p class="quantity">500 g</p> -->
+            <button class="add-to-cart" data-id="93" data-name="Masala Lemon" data-price="38">Add</button>
+          </div>
+        </div>
+        
+        <div id="bankcard1">
+          <a href="./grocery.html">
+            <img src="images/pomegranate_j07.png"  alt="Peanuts_image.." style="box-sizing: 50%;margin-top:50px; margin-left:20%;margin-right:20%;" />
+          </a>
+          <div><p style="margin-left:80px;"></pSTYLE><b>Pomegranate-Juice</b></div>
+          <div class="product">
+            <p class="discount">28% Off</p>
+            <p class="price">
+              <span class="original-price">₹45</span> <span class="discounted-price">₹38</span>
+            </p>
+            <!-- <p class="quantity">500 g</p> -->
+            <button class="add-to-cart" data-id="94" data-name="Pomegrante Juice" data-price="38">Add</button>
+          </div>
+        </div>
+
+        <!-- features -->
+        <div class="features">
+          <div class="feature-item">
+              <img src="images/free_delivery_image-removebg-preview.png" alt="Free Delivery" >
+              <h3>Free Delivery*</h3>
+              <p>On all orders above ₹500</p>
+          </div>
+          <div class="feature-item">
+              <img src="images/6hrs_shipping-removebg-preview.png" alt="6Hr Shipping">
+              <h3>6Hr Shipping*</h3>
+              <p>Delivering across Rajathan</p>
+          </div>
+          <div class="feature-item">
+              <img src="images/easy_returns-removebg-preview.png" alt="Easy Returns">
+              <h3>Easy Returns</h3>
+              <p>For items damaged during transit or quality issues</p>
+          </div>
+          <div class="feature-item">
+              <img src="images/all_payment_modes-removebg-preview.png" alt="All Payment Modes">
+              <h3>All Payment Modes</h3>
+              <p>Cards, UPI, Wallets, Net Banking and COD</p>
+          </div>
+          <div class="feature-item">
+              <img src="images/customer_support-removebg-preview.png" alt="Customer Support">
+              <h3>Customer Support</h3>
+              <p>Between 7am to 10pm, Monday to Saturday</p>
+          </div>
+      </div>
+        
+        
+
+        
+        
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;display=swap'>
+  <link rel="stylesheet" href="orderbutton.css">
+  <link
+    rel="icon"
+    type="image/x-icon"
+    href="images/logo.jpg"
+  />
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <script src="script.js" type="module"></script>
+    <link rel="stylesheet" href="index.css" />
+    <script src="sli.js" type="module"></script>
+    <script src="sli2.js" type="module"></script>
+    <link rel="stylesheet" href="sli.css" />
+    <link rel="stylesheet" href="silder1.css" />
+    <script src="slider1.js" type="module"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+  <link rel="stylesheet" href="cart1.css">
+  <script src="cart1.js" type="module"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="search.js"></script>
+  <script src="loading.js"></script>
+  <script>
+    AOS.init();
+ </script>
+  <style>
+    /* Global reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 20px;
+    }
+
+    /* Header styling */
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color:transparent;
+      color: white;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 36px;
+    }
+
+    /* Main content styling */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .cart {
+      padding: 20px;
+    }
+
+    .cart h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #444;
+    }
+
+    /* Cart items list */
+    #cart-items {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #cart-items li {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 10px;
+    }
+
+    #cart-items li:last-child {
+      border-bottom: none;
+    }
+
+    /* Total price styling */
+    p {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: right;
+      margin-top: 20px;
+    }
+
+    /* Button styling (if added) */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  
+    <title>Shopping Cart</title>
+    <div class="loader_bg">
+      <div class="loader"><img src="main page.grocery\loader.gif" alt="#"/></div>
+   </div>
+    
+  
+    <header>
+      
+        <a href="login page/loginpage.html" class="logo">
+            <img src="images/logo.jpg" alt="Logo" class="logo">
+        </a>
+        <div class="search" onclick="togglesearch();">
+          <ion-icon name="search-outline"></ion-icon>
+          <input type="text" placeholder="Search">
+      </div>
+        
+        <div class="bar">
+            <ul class="nav">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./aboutus.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="dairyproduct.html">Dairy Product</a>
+                        <a href="wholesome_harvest.html">Fresh Atta</a>
+                        <a href="green_veges.html">Vegetables</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">My Location</a>
+                    <div class="dropdown-content">
+                        <a href="#">Bhilwara</a>
+                        <a href="#">Jaipur</a>
+                        <a href="#">Udaipur</a>
+                    </div>
+                </li>
+                
+            </ul>
+            <div class="mycart">
+              <a href="cart1.html">
+                <ion-icon name="cart-outline"></ion-icon></a>
+            </div>
+            <div class="menu">
+                <ion-icon name="ellipsis-vertical"></ion-icon>
+            </div>
+        </div>
+        <ul class="nav-mobile">
+         
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">My Location</a></li>
+            
+        </ul>
+      
+      
+    </header>
+    <div id="container_byOm">
+      <div id="Anpaan">
+        <img
+          src="images/LTC_Logo.png"
+          alt=""
+          height="100%"
+          width="100%" style="box-sizing: 50%;margin-top: 100px;" />
+          
+
+      </div>
+   
+    <main>
+      <div class="cart">
+        <h2>Items in your Cart</h2>
+        <ul id="cart-items">
+          <!-- Cart items will appear here -->
+        </ul>
+        <p>Total: ₹<span id="total-price">0</span></p>
+      </div>
+     
+      <button class="order"><span class="default">Complete Order</span><span class="success">Order Placed
+        <svg viewbox="0 0 12 10">
+          <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+        </svg></span>
+      <div class="box"></div>
+      <div class="truck">
+        <div class="back"></div>
+        <div class="front">
+          <div class="window"></div>
+        </div>
+        <div class="light top"></div>
+        <div class="light bottom"></div>
+      </div>
+      <div class="lines"></div>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+      <script src="orderbutton.js"></script>
+      <button class="order" onclick="clearCart()"><span class="default">Clear Cart</span>
+      <label  id="clear-cart-btn" ></label>
+    
+    </main>
+  
+  
+  
+  
+    <script>
+      // Retrieve cart from localStorage
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  
+      // Function to update the cart display
+      function updateCart() {
+        $('#cart-items').empty();
+  
+        cart.forEach(item => {
+          $('#cart-items').append(`<li class="cart-item">${item.name} - ₹${item.price} x ${item.quantity}</li>`);
+        });
+  
+        let totalPrice = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+        $('#total-price').text(totalPrice);
+      }
+  
+      // Initialize the cart display on page load
+      updateCart();
+     
+      // If the cart is empty
+      if (cart.length === 0) {
+        $('#cart-items').append('<li>Your cart is empty.</li>');
+      }
+      function clearCart() {
+        localStorage.removeItem('cart');  // Remove cart from localStorage
+        cart = [];  // Empty the cart array
+        updateCart();  // Update the cart display
+      }
+  
+      // Attach event listener to the Clear Cart button
+      $('#clear-cart-btn').click(function() {
+        clearCart();  // Call the clearCart function when the button is clicked
+      });
+    </script>
+  
+   
+</body>
+</html>

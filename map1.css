@@ -1,0 +1,40 @@
+/* Reset and basic styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+}
+
+main {
+    height: calc(100% - 150px); /* Adjust for header and footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    max-height: 800px;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
